@@ -19,12 +19,7 @@ namespace Unit05.Game.Scripting
         {
         }
 
-        /// <summary>
-        /// <para>
-        /// Overrides the Execute() method from Action.
-        /// </para>
-        /// <para>Moves all Actors.</para>
-        /// </summary>
+        /// <inheritdoc/>
         public void Execute(Cast cast, Script script)
         {
             foreach (Actor actor in cast.GetAllActors())
